@@ -12,9 +12,12 @@
     "color",
     "dark"
   ],
-  "repository": "https://github.com/atom/tropical-freeze-syntax",
+  "repository": "https://github.com/dubstepper/tropical-freeze-syntax",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+    "express": "^4.15.3"
   }
 }

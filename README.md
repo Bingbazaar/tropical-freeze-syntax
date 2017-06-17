@@ -5,7 +5,7 @@ A colorful syntax theme with fresh, vivid colors.
 Tested with: `HTML, CSS, JavaScript, PHP and JSON`
 
 HTML:
-![Tropical-Freeze-Syntax - HTML](http://prntscr.com/fkzljs)
+![Tropical-Freeze-Syntax - HTML](https://image.prntscr.com/image/2i-SKRLMRjGlCEhxTAdsmw.png)
 
 JavaScript:
-![Tropical-Freeze-Syntax - HTML](https://prnt.sc/fkzm3o)
+![Tropical-Freeze-Syntax - HTML](https://image.prntscr.com/image/ntjcf7MsQsiujx2PIj1t3w.png)
