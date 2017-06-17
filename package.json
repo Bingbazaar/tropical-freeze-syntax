@@ -1,0 +1,20 @@
+{
+  "name": "tropical-freeze-syntax",
+  "theme": "syntax",
+  "version": "0.0.0",
+  "description": "A colorful dark syntax theme with fresh, vivid colors.",
+  "keywords": [
+    "syntax",
+    "theme",
+    "vivid",
+    "fresh",
+    "colorful",
+    "color",
+    "dark"
+  ],
+  "repository": "https://github.com/atom/tropical-freeze-syntax",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  }
+}
