@@ -119,6 +119,14 @@ atom-text-editor {
   &.syntax--parameter.syntax--function {
     color: lighten(@orange, 15%);
   }
+
+  &.syntax--language{
+    color: @blue;
+  }
+
+  &.syntax--property{
+    color: @babyblue;
+  }
 }
 
 .syntax--invalid.syntax--illegal {
@@ -169,6 +177,9 @@ atom-text-editor {
 }
 
 .bracket-matcher{
+  border-bottom: none!important;
+  background-color: rgba(96, 192, 255, 0.25);
+  border-radius: 1.5px;
 
 }
 
@@ -219,7 +230,7 @@ atom-text-editor {
   }
 
   &.syntax--function  {
-    color: @lightblue;
+    color: @blue;
 
     &.syntax--any-method {
       color: @blue;
@@ -232,6 +243,14 @@ atom-text-editor {
     color: @babyblue;
   }
   &.syntax--property-name{
+    color: @blue;
+  }
+
+  &.syntax--constant{
+    color: @lightblue;
+  }
+
+  &.syntax--variable{
     color: @blue;
   }
   /*&.syntax--constant{
