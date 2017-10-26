@@ -32,9 +32,9 @@ atom-text-editor {
     }
   }
 
+  .fold-marker:after,
   .gutter .line-number.folded,
-  .gutter .line-number:after,
-  .fold-marker:after {
+  .gutter .line-number:after {
     color: @light-gray;
   }
 
@@ -50,20 +50,16 @@ atom-text-editor {
     background-color: @syntax-selection-color;
   }
 }
-
-
 // Syntax styles
-
 .syntax--comment {
   color: @gray;
 }
 
-.syntax--any{
+.syntax--any {
   color: @blue;
 }
 
 .syntax--keyword {
-
   &.syntax--control {
     color: @red;
   }
@@ -80,7 +76,7 @@ atom-text-editor {
     color: @lightblue;
   }
 
-  &.syntax--other{
+  &.syntax--other {
     color: @blue;
   }
 }
@@ -93,7 +89,7 @@ atom-text-editor {
   color: @blue;
 
   &.syntax--character.syntax--escape {
-    color: @cyan;
+    color: @red;
   }
 
   &.syntax--numeric {
@@ -117,14 +113,14 @@ atom-text-editor {
   }
 
   &.syntax--parameter.syntax--function {
-    color: lighten(@orange, 15%);
+    color: @orange;
   }
 
-  &.syntax--language{
+  &.syntax--language {
     color: @blue;
   }
 
-  &.syntax--property{
+  &.syntax--property {
     color: @babyblue;
   }
 }
@@ -134,8 +130,14 @@ atom-text-editor {
   color: @syntax-background-color;
 }
 
-.syntax--html{
-  &.syntax--punctuation{
+.syntax--css{
+  &.syntax--quoted{
+    color: @light-orange!important;
+  }
+}
+
+.syntax--html {
+  &.syntax--punctuation {
     &.syntax--quoted,
     &.syntax--string {
       color: @lightblue!important;
@@ -149,14 +151,13 @@ atom-text-editor {
   }
 }
 
-.syntax--js{
-  &.syntax--string{
+.syntax--js {
+  &.syntax--string {
     color: @light-orange!important;
   }
 }
 
 .syntax--string {
-
   color: @lightblue;
 
   &.syntax--js {
@@ -164,7 +165,7 @@ atom-text-editor {
   }
 
   &.syntax--regexp {
-    color: @cyan;
+    color: @lightblue;
 
     .syntax--source.syntax--ruby.syntax--embedded {
       color: @orange;
@@ -176,11 +177,10 @@ atom-text-editor {
   }
 }
 
-.bracket-matcher{
+.bracket-matcher {
   border-bottom: none!important;
   background-color: rgba(96, 192, 255, 0.25);
   border-radius: 1.5px;
-
 }
 
 .syntax--punctuation {
@@ -189,12 +189,13 @@ atom-text-editor {
       color: @gray!important;
     }
 
-    &.syntax--string{
+    &.syntax--string {
       color: @light-orange;
     }
-    &.syntax--variable,
+
+    &.syntax--array,
     &.syntax--parameters,
-    &.syntax--array {
+    &.syntax--variable {
       color: @lightblue;
     }
 
@@ -221,7 +222,6 @@ atom-text-editor {
   &.syntax--section.syntax--embedded {
     color: @blue;
   }
-
 }
 
 .syntax--support {
@@ -229,7 +229,7 @@ atom-text-editor {
     color: @light-orange;
   }
 
-  &.syntax--function  {
+  &.syntax--function {
     color: @blue;
 
     &.syntax--any-method {
@@ -238,19 +238,20 @@ atom-text-editor {
   }
 }
 
-.syntax--css{
-  &.syntax--property-name{
+.syntax--css {
+  &.syntax--property-name {
     color: @babyblue;
   }
-  &.syntax--property-name{
+
+  &.syntax--property-name {
     color: @blue;
   }
 
-  &.syntax--constant{
+  &.syntax--constant {
     color: @lightblue;
   }
 
-  &.syntax--variable{
+  &.syntax--variable {
     color: @blue;
   }
   /*&.syntax--constant{
@@ -258,11 +259,12 @@ atom-text-editor {
   }*/
 }
 
-.syntax--json{
-  &.syntax--string{
+.syntax--json {
+  &.syntax--string {
     color: @blue;
   }
-  &.syntax--definition.syntax--punctuation{
+
+  &.syntax--definition.syntax--punctuation {
     color: @babyblue;
   }
 }
@@ -271,9 +273,11 @@ atom-text-editor {
   &.syntax--name.syntax--function {
     color: @blue;
   }
+
   &.syntax--name .syntax--js {
     color: lighten(@red, 7%);
   }
+
   &.syntax--name.syntax--type {
     color: @red;
   }
@@ -281,7 +285,9 @@ atom-text-editor {
   &.syntax--other.syntax--inherited-class {
     color: @green;
   }
-  &.syntax--name.syntax--class, &.syntax--name.syntax--type.syntax--class {
+
+  &.syntax--name.syntax--class,
+  &.syntax--name.syntax--type.syntax--class {
     color: @light-orange;
   }
 
@@ -305,7 +311,7 @@ atom-text-editor {
 
 .syntax--meta {
 
-  &.syntax--string-contents{
+  &.syntax--string-contents {
     color: @orange;
   }
 
@@ -377,14 +383,12 @@ atom-text-editor {
 
 .syntax--source.syntax--gfm .syntax--markup {
   -webkit-font-smoothing: auto;
+
   &.syntax--heading {
     color: @green;
   }
 }
-
-
 // Mini editor
-
 atom-text-editor[mini] .scroll-view {
   padding-left: 1px;
 }

@@ -1,15 +1,15 @@
 # Tropical Freeze syntax theme
 
-A colorful syntax theme with fresh, vivid colors.
+A colorful dark syntax theme with fresh, vivid colors.
 
 Tested with: `HTML, CSS, JavaScript, PHP and JSON`
 
-HTML:
+HTML & CSS:
 
 
-![Tropical-Freeze-Syntax - HTML](https://image.prntscr.com/image/2i-SKRLMRjGlCEhxTAdsmw.png)
+![Tropical-Freeze-Syntax - HTML](https://image.prntscr.com/image/K7gfZ4IfQ1GVENfACAs8BA.png)
 
 JavaScript:
 
 
-![Tropical-Freeze-Syntax - HTML](https://image.prntscr.com/image/ntjcf7MsQsiujx2PIj1t3w.png)
+![Tropical-Freeze-Syntax - JavaScript](https://image.prntscr.com/image/4l8OoBlVSnGBnJkmrs5OzQ.png)
